@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ragad</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include("layout/header")  %>
+    <main>
+        <!-- 
+        <% if (locals.location && location !== "") { %> 
+            <h1>Search for location: <%= location %></h1>
+        <% } else { %>
+            <h1>This is the search page</h1>
+        <% } %>
+        -->
+        <h2>Enter location you want weather for:</h2>
+        <br/>
+        <form id="location_form">
+            <input id="location_input">
+            <button>Search</button>
+        </form>
+        <h2>Location information:</h2>
+        <h4 class="data_block" id="location_data_block">
+        </h4>
+    </main>
+    <%- include("layout/footer")  %>
+    <script src="/js/location.js"></script>
+</body>
+</html>

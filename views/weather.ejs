@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ragad</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/index.js"></script>
+</head>
+<body>
+    <%- include("layout/header")  %>
+
+    <main>
+      
+        <h2>Type lon Here:</h2>
+        <br/>
+        <form id="location_form">
+            <input id="lon_input">
+        </form>
+
+        <h2>Type lat Here:</h2>
+        <br/>
+        <form id="location_form">
+            <input id="lat_input">
+            
+        </form>
+        <br/>
+        <button onclick="Weatherpage()">Search</button>
+        <h2>Weather information:</h2>
+        <h4 class="data_block" id="weather_data_block">
+        </h4>
+    </main>
+
+  
+    <%- include("layout/footer")  %>
+    <script src="/js/weather.js"></script>
+</body>
+</html>
